@@ -2,7 +2,7 @@
 	"name": "directus-whitebox-feed",
 	"description": "Please enter a description for your extension",
 	"icon": "extension",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"keywords": [
 		"directus",
 		"directus-extension",
@@ -28,7 +28,8 @@
 		"build": "directus-extension build",
 		"dev": "directus-extension build -w --no-minify --sourcemap",
 		"link": "directus-extension link",
-		"validate": "directus-extension validate"
+		"validate": "directus-extension validate",
+		"prepare": "npm run build"
 	},
 	"devDependencies": {
 		"@directus/extensions-sdk": "14.0.0",
